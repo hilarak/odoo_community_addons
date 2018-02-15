@@ -44,7 +44,7 @@
         'views/views.xml',
     ],
     'demo': [],
-    'images': [],
+    'images': ['static/description/banner.jpg'],
     'license': "AGPL-3",
     'installable': True,
     'application': True
