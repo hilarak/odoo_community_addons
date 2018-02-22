@@ -1,32 +1,37 @@
 language: python
 
 python:
- - "2.7"
+  - "2.7"
+ 
+notifications:
+  email: false
+  
 sudo: false
 cache: pip
-
-env:
-  - VERSION="10.0" ODOO_REPO="odoo/odoo"
-  - VERSION="10.0" ODOO_REPO="OCA/OCB"
-
-install:
-  - git clone https://github.com/OCA/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
-  - git clone https://github.com/OCA/web.git ${HOME}/web -b ${VERSION}
-  - export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
-  - travis_install_nightly
 
 addons:
   apt:
     packages:
-      - expect-dev  # provides unbuffer utility
-      - python-lxml  # because pip installation is slow
+      - expect-dev
+      - python-lxml
+      
+env:
+  global:
+  - VERSION="10.0" TESTS="0" LINT_CHECK="0" TRANSIFEX="0"
+
+  matrix:
+  - TESTS="1" ODOO_REPO="odoo/odoo"
 
 virtualenv:
-system_site_packages: true
+  system_site_packages: true
+
+install:
+  - git clone --depth=1 https://github.com/OCA/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
+  - export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
+  - travis_install_nightly
 
 script:
- - travis_run_tests
+  - travis_run_tests
 
-after_succes:
- - travis_after_tests_success
-
+after_success:
+- travis_after_tests_success
