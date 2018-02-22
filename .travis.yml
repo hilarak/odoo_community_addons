@@ -5,6 +5,16 @@ python:
 sudo: false
 cache: pip
 
+env:
+  - VERSION="10.0" ODOO_REPO="odoo/odoo"
+  - VERSION="10.0" ODOO_REPO="OCA/OCB"
+
+install:
+  - git clone https://github.com/OCA/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
+  - git clone https://github.com/OCA/web.git ${HOME}/web -b ${VERSION}
+  - export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
+  - travis_install_nightly
+
 addons:
   apt:
     packages:
