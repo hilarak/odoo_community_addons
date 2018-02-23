@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    Odoo, HRMS Leave Cancellation
+#    Odoo, HRMS Dashboard
 #    Copyright (C) 2018 Hilar AK All Rights Reserved
 #    https://www.linkedin.com/in/hilar-ak/
 #    <hilarak@gmail.com>
