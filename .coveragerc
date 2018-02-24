@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = __YOUR_PROJECT_FOLDER__
+source = odoo_community_addons
 
 [report]
 exclude_lines =
