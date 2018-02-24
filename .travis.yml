@@ -24,6 +24,9 @@ env:
 
 virtualenv:
   system_site_packages: true
+  
+before_install:
+  - pip install codecov coverage
 
 install:
   - git clone --depth=1 https://github.com/OCA/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
