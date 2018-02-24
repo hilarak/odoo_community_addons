@@ -34,4 +34,4 @@ script:
   - travis_run_tests
 
 after_success:
-- codecov
+  - codecov -f coverage.xml
