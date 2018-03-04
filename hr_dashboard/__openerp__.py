@@ -35,7 +35,7 @@
     'author': "Hilar AK",
     'website': "https://www.linkedin.com/in/hilar-ak/",
     'category': "Generic Modules/Human Resources",
-    'version': "9.0.1.0.0",
+    'version': "9.0.1.1.0",
     'depends': [
         'base',
         'hr',

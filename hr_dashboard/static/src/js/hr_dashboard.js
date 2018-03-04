@@ -256,7 +256,7 @@ var HrDashboardView = KanbanView.extend({
             target: 'current'
         })
     },
-    action_my_profile: function() {
+    action_my_profile: function(event) {
         var self = this;
         event.stopPropagation();
         event.preventDefault();
