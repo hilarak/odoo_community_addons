@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = hilarak
+source = hilarak/odoo_community_addons
 
 [report]
 exclude_lines =
