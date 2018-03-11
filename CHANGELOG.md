@@ -1,4 +1,14 @@
-### [ADD] Odoo Debrand Initial Commit (HEAD -> 11.0)
+### [REM] Remove all (HEAD -> 11.0)
+>Sun, 11 Mar 2018 12:30:53 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: Hilar Ak (hilarak@gmail.com)
+
+
+
+
+### [ADD] Odoo Debrand Initial Commit (origin/11.0)
 >Sun, 11 Mar 2018 12:17:04 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
@@ -8,7 +18,7 @@
 
 
 
-### Update README.md (origin/11.0)
+### Update README.md
 >Sat, 10 Mar 2018 19:44:25 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
