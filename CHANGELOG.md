@@ -1,4 +1,74 @@
-### [ADD] CI tools (HEAD -> 11.0)
+### [ADD] Odoo Debrand Initial Commit (HEAD -> 11.0)
+>Sun, 11 Mar 2018 12:17:04 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: Hilar Ak (hilarak@gmail.com)
+
+
+
+
+### Update README.md (origin/11.0)
+>Sat, 10 Mar 2018 19:44:25 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### Create .coveragerc
+>Thu, 8 Mar 2018 12:26:42 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### Update .gitignore
+>Thu, 8 Mar 2018 12:09:34 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### Update .travis.yml
+>Thu, 8 Mar 2018 11:38:56 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### Update .travis.yml
+>Wed, 7 Mar 2018 13:06:56 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### Update .travis.yml
+>Wed, 7 Mar 2018 12:59:58 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### [ADD] CI tools
 >Mon, 5 Mar 2018 14:56:01 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
@@ -8,7 +78,7 @@
 
 
 
-### Update Manifest (origin/11.0)
+### Update Manifest
 >Mon, 5 Mar 2018 14:45:52 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
