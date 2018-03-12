@@ -1,4 +1,14 @@
-### [ADD] Banner.gif (HEAD -> 11.0)
+### [IMP] Updates on controller and views (HEAD -> 11.0)
+>Mon, 12 Mar 2018 18:17:49 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: Hilar Ak (hilarak@gmail.com)
+
+
+
+
+### [ADD] Banner.gif (origin/11.0)
 >Sun, 11 Mar 2018 13:40:35 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
@@ -8,7 +18,7 @@
 
 
 
-### [ADD] Odoo Debrand Initial Commit (origin/11.0)
+### [ADD] Odoo Debrand Initial Commit
 >Sun, 11 Mar 2018 12:31:57 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)

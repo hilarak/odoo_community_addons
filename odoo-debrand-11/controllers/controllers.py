@@ -89,7 +89,6 @@ class OdooDebrand(Database):
         d['langs'] = odoo.service.db.exp_list_lang()
         d['countries'] = odoo.service.db.exp_list_countries()
         d['pattern'] = main.DBNAME_PATTERN
-
         # databases list
         d['databases'] = []
         try:
@@ -99,8 +98,17 @@ class OdooDebrand(Database):
             monodb = db_monodb()
             if monodb:
                 d['databases'] = [monodb]
-        website_id = request.env['website'].sudo().search([])
-        d['company_name'] = website_id and website_id[0].company_name
-        d['favicon_url'] = website_id and website_id[0].favicon_url or ''
-        d['company_logo_url'] = website_id and website_id[0].company_logo_url or ''
-        return env.get_template("database_manager_extend.html").render(d)
+
+        try:
+            website_id = request.env['website'].sudo().search([])
+            d['company_name'] = website_id and website_id[0].company_name
+            d['favicon_url'] = website_id and website_id[0].favicon_url or ''
+            d['company_logo_url'] = website_id and website_id[0].company_logo_url or ''
+            return env.get_template("database_manager_extend.html").render(d)
+        except Exception as e:
+            d['company_name'] = ''
+            d['favicon_url'] = ''
+            d['company_logo_url'] = ''
+            return main.env.get_template("database_manager.html").render(d)
+
+
