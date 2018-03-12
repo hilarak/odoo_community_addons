@@ -1,4 +1,14 @@
-### [IMP] Updates on controller and views (HEAD -> 11.0)
+### [ADD] Version Number (HEAD -> 11.0)
+>Mon, 12 Mar 2018 18:24:00 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: Hilar Ak (hilarak@gmail.com)
+
+
+
+
+### [IMP] Updates on controller and views
 >Mon, 12 Mar 2018 18:17:49 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
@@ -8,7 +18,27 @@
 
 
 
-### [ADD] Banner.gif (origin/11.0)
+### Update index.html
+>Mon, 12 Mar 2018 15:37:43 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### Update README.md
+>Mon, 12 Mar 2018 15:37:05 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### [ADD] Banner.gif
 >Sun, 11 Mar 2018 13:40:35 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
