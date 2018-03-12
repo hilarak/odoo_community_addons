@@ -4,7 +4,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8717dc7e3eae4124971361b6a67be824)](https://www.codacy.com/app/hilarak/odoo_community_addons?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hilarak/odoo_community_addons&amp;utm_campaign=Badge_Grade)
 # HR Dasboard
 
-Hr Dashboard is an odoo addon for HRMS. Dashboard which displays lot of human resource related details scattered in different menus in a single container. Here the details and the count of datas need approval are show. So its access is limitted to Human resource manager or officers.
+Hr Dashboard is an odoo addon for HRMS. Dashboard which displays a lot of human resource related details scattered in different menus in a single container. Here the details and the count of data need approval are shown. So its access is limited to Human resource manager or officers.
 
   - Approval Menus
   - Leave Details
