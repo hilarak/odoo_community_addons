@@ -48,6 +48,7 @@ Odoo Debranding uses
 ### Installation
 
 Install the odoo11 and dependency modules defined in manifest. After installation you can configure details under general settings.
+### Recommends only for community version, Not tested for enterprise or other editions !
 
 ### Contributer
 * Hilar AK <hilarak@gmail.com>
