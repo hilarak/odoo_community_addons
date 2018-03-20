@@ -49,6 +49,18 @@ HR Dashboard uses
 
 Install the odoo10 and HRMS modules defined in manifest. After installation you can see a new menu 'HR Dashboard' for users who are officer/manager in Human Resource Odoo.
 
+### Note
+On windows servers, There is a common issue related with odoo, from this link [https://github.com/odoo/odoo/issues/14581?lipi=urn%3Ali%3Apage%3Ad_flagship3_messaging%3BO18X%2FE98SVKdiEiTCbko2Q%3D%3D](https://github.com/odoo/odoo/issues/14581?lipi=urn%3Ali%3Apage%3Ad_flagship3_messaging%3BO18X%2FE98SVKdiEiTCbko2Q%3D%3D) 
+
+solution:-
+Install this addon [Fix Error Blank Page](https://apps.odoo.com/apps/modules/10.0/web_fix_blank_page/) or do this script
+```
+UPDATE ir_attachment 
+SET mimetype = 'text/javascript' 
+WHERE mimetype ='text/plain' 
+and datas_fname like '%.js';
+```
+
 ### Todos
 
  - ADD more employee datas
