@@ -1,4 +1,14 @@
-### [ADD] Version Number (HEAD -> 11.0)
+### [FIX] oe_content css issue (HEAD -> 11.0)
+>Tue, 10 Apr 2018 16:04:17 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: Hilar Ak (hilarak@gmail.com)
+
+
+
+
+### [ADD] Version Number (origin/11.0)
 >Mon, 12 Mar 2018 18:24:00 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
