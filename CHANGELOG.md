@@ -1,4 +1,14 @@
-### [FIX] oe_content css issue (HEAD -> 11.0)
+### [ADD] travis, codacy, license badges (HEAD -> 11.0)
+>Wed, 11 Apr 2018 17:32:18 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: Hilar Ak (hilarak@gmail.com)
+
+
+
+
+### [FIX] oe_content css issue
 >Tue, 10 Apr 2018 16:04:17 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
@@ -8,7 +18,27 @@
 
 
 
-### [ADD] Version Number (origin/11.0)
+### Update index.html
+>Mon, 19 Mar 2018 12:07:56 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### Update README.md
+>Mon, 19 Mar 2018 12:05:27 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### [ADD] Version Number
 >Mon, 12 Mar 2018 18:24:00 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
