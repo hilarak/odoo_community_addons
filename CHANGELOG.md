@@ -1,4 +1,14 @@
-### [FIX] oe_content css issue (HEAD -> 10.0)
+### [ADD] travis, codacy, license badges (HEAD -> 10.0)
+>Wed, 11 Apr 2018 17:34:28 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: Hilar Ak (hilarak@gmail.com)
+
+
+
+
+### [FIX] oe_content css issue
 >Tue, 10 Apr 2018 16:01:07 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
@@ -8,7 +18,87 @@
 
 
 
-### Create CHANGELOG.md (origin/HEAD, origin/10.0)
+### Update README.md
+>Tue, 20 Mar 2018 13:52:07 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### Update index.html
+>Mon, 12 Mar 2018 15:35:22 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### Update README.md
+>Mon, 12 Mar 2018 15:34:31 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### Update .gitignore
+>Thu, 8 Mar 2018 12:10:04 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### Update .travis.yml
+>Thu, 8 Mar 2018 12:03:00 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### Update .coveragerc
+>Thu, 8 Mar 2018 11:55:34 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### Update .coveragerc
+>Thu, 8 Mar 2018 11:35:00 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### Update .travis.yml
+>Thu, 8 Mar 2018 11:34:37 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: GitHub (noreply@github.com)
+
+
+
+
+### Create CHANGELOG.md
 >Sun, 4 Mar 2018 23:50:38 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
