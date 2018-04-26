@@ -44,7 +44,6 @@ nosetests.xml
 
 # Translations
 *.mo
-*.pot
 
 # Django stuff:
 *.log

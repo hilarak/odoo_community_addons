@@ -1,4 +1,14 @@
-### [ADD] i18n for translations (HEAD -> 11.0)
+### [FIX] added ignored .pot file (HEAD -> 11.0)
+>Thu, 26 Apr 2018 18:05:17 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: Hilar Ak (hilarak@gmail.com)
+
+
+
+
+### [ADD] i18n for translations (origin/11.0)
 >Thu, 26 Apr 2018 17:31:53 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
@@ -8,7 +18,7 @@
 
 
 
-### [ADD] travis, codacy, license badges (origin/11.0)
+### [ADD] travis, codacy, license badges
 >Wed, 11 Apr 2018 17:32:18 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
