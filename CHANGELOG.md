@@ -1,4 +1,14 @@
-### [ADD] travis, codacy, license badges (HEAD -> 11.0)
+### [ADD] i18n for translations (HEAD -> 11.0)
+>Thu, 26 Apr 2018 17:31:53 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: Hilar Ak (hilarak@gmail.com)
+
+
+
+
+### [ADD] travis, codacy, license badges (origin/11.0)
 >Wed, 11 Apr 2018 17:32:18 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
