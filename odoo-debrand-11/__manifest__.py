@@ -37,7 +37,7 @@
     'depends': [
         'base',
         'website',
-        'im_livechat',
+        #'im_livechat',
         'mail'
     ],
     'data': [

@@ -1,4 +1,14 @@
-### [FIX] added ignored .pot file (HEAD -> 11.0)
+### [IMP] removed imlivechat dependency, views (HEAD -> 11.0)
+>Tue, 1 May 2018 14:02:28 +0530
+
+>Author: Hilar Ak (hilarak@gmail.com)
+
+>Commiter: Hilar Ak (hilarak@gmail.com)
+
+
+
+
+### [FIX] added ignored .pot file (origin/11.0)
 >Thu, 26 Apr 2018 18:05:17 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
@@ -8,7 +18,7 @@
 
 
 
-### [ADD] i18n for translations (origin/11.0)
+### [ADD] i18n for translations
 >Thu, 26 Apr 2018 17:31:53 +0530
 
 >Author: Hilar Ak (hilarak@gmail.com)
