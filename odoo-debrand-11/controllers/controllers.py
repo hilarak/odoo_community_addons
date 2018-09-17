@@ -8,11 +8,15 @@ import odoo
 import os
 import sys
 import jinja2
+import base64
+import logging
 from odoo import http, tools
 from odoo.addons.web.controllers.main import Database, Binary
 from odoo.addons.web.controllers import main
 from odoo.modules import get_resource_path
 from odoo.http import request
+
+_logger = logging.getLogger(__name__)
 
 if hasattr(sys, 'frozen'):
     # When running on compiled windows binary, we don't have access to package loader.
@@ -28,10 +32,63 @@ db_monodb = http.db_monodb
 class BinaryCustom(Binary):
     @http.route([
         '/web/binary/company_logo',
+#        '/logo',
+#        '/logo.png',
+    ], type='http', auth="none", cors="*")
+    def company_logo(self, dbname=None, **kw):
+        imgname = 'logo'
+        imgext = '.png'
+        placeholder = functools.partial(get_resource_path, 'web', 'static', 'src', 'img')
+        uid = None
+        if request.session.db:
+            dbname = request.session.db
+            uid = request.session.uid
+        elif dbname is None:
+            dbname = db_monodb()
+
+        if not uid:
+            uid = odoo.SUPERUSER_ID
+
+        if not dbname:
+            response = http.send_file(placeholder(imgname + imgext))
+        else:
+            try:
+                # create an empty registry
+                registry = odoo.modules.registry.Registry(dbname)
+                with registry.cursor() as cr:
+                    company = int(kw['company']) if kw and kw.get('company') else False
+                    if company:
+                        cr.execute("""SELECT logo_web, write_date
+                                        FROM res_company
+                                       WHERE id = %s
+                                   """, (company,))
+                    else:
+                        cr.execute("""SELECT c.logo_web, c.write_date
+                                        FROM res_users u
+                                   LEFT JOIN res_company c
+                                          ON c.id = u.company_id
+                                       WHERE u.id = %s
+                                   """, (uid,))
+                    row = cr.fetchone()
+                    if row and row[0]:
+                        image_base64 = base64.b64decode(row[0])
+                        image_data = io.BytesIO(image_base64)
+                        imgext = '.' + (imghdr.what(None, h=image_base64) or 'png')
+                        response = http.send_file(image_data, filename=imgname + imgext, mtime=row[1])
+                    else:
+                        response = http.send_file(placeholder('nologo.png'))
+            except Exception:
+                response = http.send_file(placeholder(imgname + imgext))
+
+        return response
+
+
+    @http.route([
+#        '/web/binary/company_logo',
         '/logo',
         '/logo.png',
     ], type='http', auth="none")
-    def company_logo(self, dbname=None, **kw):
+    def custom_logo(self, dbname=None, **kw):
         imgname = 'logo'
         imgext = '.png'
         # Here we are changing the default logo with logo selected on debrand settings
@@ -55,7 +112,7 @@ class BinaryCustom(Binary):
                 # create an empty registry
                 registry = odoo.modules.registry.Registry(dbname)
                 if custom_logo:
-                    image_base64 = custom_logo.decode('base64')
+                    image_base64 = base64.b64decode(custom_logo)
                     image_data = io.BytesIO(image_base64)
                     imgext = '.' + (imghdr.what(None, h=image_base64) or 'png')
                     response = http.send_file(image_data, filename=imgname + imgext, mtime=None)
@@ -75,7 +132,8 @@ class BinaryCustom(Binary):
                             response = http.send_file(image_data, filename=imgname + imgext, mtime=row[1])
                         else:
                             response = http.send_file(placeholder('nologo.png'))
-            except Exception:
+            except Exception as e:
+                _logger.warning('EXCEPT custom_logo: %s', e)
                 response = http.send_file(placeholder(imgname + imgext))
         return response
 
