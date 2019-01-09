@@ -36,7 +36,7 @@
     'category': 'Tools',
     'price': 69.99,
     'currency': 'EUR',
-    'version': '11.0.1.0.1',
+    'version': '12.0.1.0.1',
     'depends': [
         'base_setup',
         'website',
