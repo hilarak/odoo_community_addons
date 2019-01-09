@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    Odoo, Odoo Debranding
@@ -27,20 +26,25 @@
         Odoo Module for backend and frontend debranding.""",
 
     'description': """
-        To debrand front-end and back-end pages by removing odoo promotions, links, labels and other related stuffs.
+        To debrand front-end and back-end pages by removing
+         odoo promotions, links, labels and other related
+         stuffs.
     """,
 
     'author': "Hilar AK",
     'website': "https://www.linkedin.com/in/hilar-ak/",
     'category': 'Tools',
+    'price': 69.99,
+    'currency': 'EUR',
     'version': '11.0.1.0.1',
     'depends': [
-        'base',
+        'base_setup',
         'website',
-        #'im_livechat',
-        'mail'
+        'mail',
+        'mail_bot'
     ],
     'data': [
+        # 'data/mailbot_data.xml',
         'views/views.xml',
     ],
     'qweb': ['static/src/xml/base.xml'],
@@ -48,4 +52,5 @@
     'license': "AGPL-3",
     'installable': True,
     'application': True,
+    'post_init_hook': 'clear_odoobot',
 }
