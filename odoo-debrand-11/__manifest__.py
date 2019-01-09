@@ -34,8 +34,6 @@
     'author': "Hilar AK",
     'website': "https://www.linkedin.com/in/hilar-ak/",
     'category': 'Tools',
-    'price': 69.99,
-    'currency': 'EUR',
     'version': '12.0.1.0.1',
     'depends': [
         'base_setup',
