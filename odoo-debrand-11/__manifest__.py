@@ -1,7 +1,7 @@
 ##############################################################################
 #
 #    Odoo, Odoo Debranding
-#    Copyright (C) 2018 Hilar AK All Rights Reserved
+#    Copyright (C) 2019 Hilar AK All Rights Reserved
 #    https://www.linkedin.com/in/hilar-ak/
 #    <hilarak@gmail.com>
 #
@@ -38,8 +38,6 @@
     'depends': [
         'base_setup',
         'website',
-        'mail',
-        'mail_bot'
     ],
     'data': [
         # 'data/mailbot_data.xml',
@@ -50,5 +48,4 @@
     'license': "AGPL-3",
     'installable': True,
     'application': True,
-    'post_init_hook': 'clear_odoobot',
 }
