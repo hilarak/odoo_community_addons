@@ -1,3 +1,10 @@
+addons:
+  postgresql: "11.1" # 12 needs postgres v > 9.5
+  apt:
+   packages:
+      - expect-dev  # provides unbuffer utility
+      - python-lxml # because pip installation is slow
+
 language: python
 
 python:
@@ -8,12 +15,6 @@ notifications:
   
 sudo: false
 cache: pip
-
-addons:
-  apt:
-    packages:
-      - expect-dev
-      - python-lxml
       
 env:
   global:
