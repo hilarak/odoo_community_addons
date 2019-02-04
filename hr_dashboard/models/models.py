@@ -97,7 +97,7 @@ class HrDashboard(models.Model):
         query = """
             select e.name as employee, e.barcode as badge_id, j.name as job, d.name as department,
             e.work_phone, e.work_email, e.work_location, e.gender, e.birthday, e.marital, e.passport_id,
-            e.medic_exam, from hr_employee e inner join hr_job j on (j.id = job_id)
+            e.medic_exam from hr_employee e inner join hr_job j on (j.id = job_id)
             inner join hr_department d on (e.department_id = d.id)
 
         """
