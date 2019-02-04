@@ -1,23 +1,30 @@
 language: python
 
 python:
-  - "3.4"
+  - "3.5"
+  
+addons:
+  postgresql: "9.6" # 12 needs postgres v > 9.5
+  apt:
+   packages:
+            - expect-dev  # provides unbuffer utility
+            - python-lxml  # because pip installation is slow
+            - python-simplejson
+            - python-serial
+            - python-yaml
+            - python-passlib
+            - python-psycopg2
+            - python-werkzeug
+            - realpath
  
 notifications:
   email: false
   
 sudo: false
-cache: pip
-
-addons:
-  apt:
-    packages:
-      - expect-dev
-      - python-lxml
       
 env:
   global:
-  - VERSION="11.0" TESTS="0" LINT_CHECK="0" TRANSIFEX="0"
+  - VERSION="12.0" TESTS="0" LINT_CHECK="0" TRANSIFEX="0"
 
   matrix:
   - TESTS="1" ODOO_REPO="odoo/odoo"
