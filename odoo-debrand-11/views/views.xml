@@ -114,7 +114,7 @@
     <template id="web_layout_extend" inherit_id="web.layout">
         <xpath expr="//title" position="replace">
             <t t-set="website_id" t-value="request.env['website'].sudo().search([])"/>
-            <title><t t-esc="title + ' ' + str(website_id and website_id[0] and website_id[0].company_name)"/></title>
+            <title><t t-esc="title or '' + ' ' + str(website_id and website_id[0] and website_id[0].company_name)"/></title>
         </xpath>
         <xpath position="replace" expr="//link[@rel='shortcut icon']"><t>
             <link type="image/x-icon" rel="shortcut icon"
