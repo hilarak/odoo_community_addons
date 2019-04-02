@@ -34,7 +34,7 @@
     'author': "Hilar AK",
     'website': "https://www.linkedin.com/in/hilar-ak/",
     'category': 'Tools',
-    'version': '12.0.4.0.3',
+    'version': '12.0.5.0.3',
     'depends': [
         'base_setup',
         'website',
