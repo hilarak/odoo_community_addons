@@ -5,7 +5,7 @@
         <field name="inherit_id" ref="website.res_config_settings_view_form"/>
         <field name="arch" type="xml">
             <xpath expr="//div[hasclass('app_settings_block')]" position="after">
-                <div class="app_settings_block" data-string="Debrand" string="Debrand" data-key="odoo-debrand"
+                <div class="app_settings_block" data-string="Debrand" string="Debrand" data-key="odoo-debrand-11"
                      groups="website.group_website_designer">
                     <field name="website_id" invisible="1"/>
                     <h2>Debranding Configurations</h2>
