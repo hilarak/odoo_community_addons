@@ -16,6 +16,7 @@ Hr Dashboard is an odoo addon for HRMS. Dashboard which displays a lot of human 
   - Total Worked Hours of each employees
   - Employee details as a Table
   - Export to pdf, xls, csv and direct print
+  
 
 # Features!
 
@@ -48,6 +49,9 @@ HR Dashboard uses
 ### Installation
 
 Install the odoo12 and HRMS modules defined in manifest. After installation you can see a new menu 'HR Dashboard' for users who are officer/manager in Human Resource Odoo.
+
+[![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/O5O2X1IM)    
+*if you want to support me to keep this project maintained. Thanks.*
 
 ### Todos
 
