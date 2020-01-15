@@ -128,7 +128,7 @@
 
     <template id="login_layout" inherit_id="mail.message_user_assigned">
         <xpath expr="//p[last()]" position="replace">
-            <t t-set="website_id" t-value="request.env['website'].sudo().search([])"/>
+            <t t-set="website_id" t-value="env['website'].sudo().search([])"/>
             <p style="color:#9E588B;">Powered by <a t-att-href="website_id and website_id[0] and website_id[0].company_website or ''">
                 <t t-esc="website_id and website_id[0] and website_id[0].company_name or ''"/></a>.</p>
         </xpath>
