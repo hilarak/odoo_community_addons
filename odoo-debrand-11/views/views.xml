@@ -73,29 +73,48 @@
     <!-- Branding Login Layout -->
     <template id="login_layout_extend_11" name="Login Layout Extend" inherit_id="web.login_layout">
         <xpath position="replace" expr="//div[1]">
-            <div class="row" style="margin-top: 15px;">
-                <t t-set="website_id" t-value="request.env['website'].sudo().search([])"/>
-                <div class="col-md-6 col-md-offset-3 o_database_list">
-                    <div class="text-center" t-if="website_id and website_id[0] and website_id[0].company_logo">
-                        <img t-att-src="'data:image/png;base64,%s' % to_text(website_id[0].company_logo or '')"
-                        width="180px" height="80px"/>
-                    </div>
-                    <div class="text-center" t-if="not website_id and website_id[0] and website_id[0].company_logo">
-                        <img t-attf-src="/web/binary/company_logo{{ '?dbname='+db if db else '' }}"/>
-                    </div>
-                    <t t-raw="0"/>
-                    <div class="text-center" t-if="not disable_footer">
-                        <t t-if="not disable_database_manager">
-                            <a class="" href="/web/database/manager">Manage Databases</a> |
-                        </t>
-                        <t>
-                            <a t-att-href="website_id and website_id[0] and website_id[0].company_website or ''"
-                               target="_blank">Powered by
-                            <span t-esc="website_id and website_id[0] and website_id[0].company_name or ''"/></a>
-                        </t>
+            <t t-set="website_id" t-value="request.env['website'].sudo().search([], limit=1)"/>
+            <t t-if="website_id">
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col-md-6 col-md-offset-3 o_database_list">
+                        <div class="text-center" t-if="website_id and website_id[0] and website_id[0].company_logo">
+                            <img t-att-src="'data:image/png;base64,%s' % to_text(website_id[0].company_logo or '')"
+                            width="180px" height="80px"/>
+                        </div>
+                        <div class="text-center" t-if="not website_id and website_id[0] and website_id[0].company_logo">
+                            <img t-attf-src="/web/binary/company_logo{{ '?dbname='+db if db else '' }}"/>
+                        </div>
+                        <t t-raw="0"/>
+                        <div class="text-center" t-if="not disable_footer">
+                            <t t-if="not disable_database_manager">
+                                <a class="" href="/web/database/manager">Manage Databases</a> |
+                            </t>
+                            <t>
+                                <a t-att-href="website_id and website_id[0] and website_id[0].company_website or ''"
+                                   target="_blank">Powered by
+                                <span t-esc="website_id and website_id[0] and website_id[0].company_name or ''"/></a>
+                            </t>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </t>
+<!--          Else Part    -->
+            <t t-else="">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 o_database_list">
+                        <div class="text-center">
+                            <img t-attf-src="/web/binary/company_logo{{ '?dbname='+db if db else '' }}"/>
+                        </div>
+                        <t t-raw="0"/>
+                        <div class="text-center" t-if="not disable_footer">
+                            <t t-if="not disable_database_manager">
+                                <a class="" href="/web/database/manager">Manage Databases</a> |
+                            </t>
+                            <a href="https://www.odoo.com" target="_blank">Powered by <span>Odoo</span></a>
+                        </div>
+                    </div>
+                </div>
+            </t>
         </xpath>
     </template>
     <!-- Web Powered By Label -->
